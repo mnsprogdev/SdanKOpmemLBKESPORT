@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keuntungan Brand Ambbasador LBK ESPORT</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../Styles/Keuntungan Divisi.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .empty-state {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .empty-state i {
+      font-size: 48px;
+      color: #ccc;
+    }
+
+    .empty-state p {
+      color: #999;
+    }
+  </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KCKV9FLGM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4KCKV9FLGM');
+</script>
+
+<body>
+  <div class="container mt-5">
+    <img src="../../Image/Assest/LBK ESPORT transparent.png" class="Logolbkesport" alt="">
+    <h2 class="Judul">Keuntungan Brand Ambbasador <span>LBK ESPORT</span></h2>
+    <hr>
+    <div class="navigation">
+      <ul class="nav-list">
+        <li><a href="Keutungan Div.html">Mobile Legend, Free Fire, Pubg Mobile Dan
+            E-Football</a></li>
+        <li><a href="Keutungan Management.html">Management</a></li>
+        <li><a href="Keutungan DKE.html">Design Kreativ Esport</a></li>
+        <li><a href="Keutungan Brand A.html" class="active">Brand Ambbasador</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="empty-state">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Data Belum Tersedia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cards = document.querySelectorAll('.card-text');
+      cards.forEach(card => {
+        const content = card.textContent;
+        if (content.length > 200) {
+          card.textContent = content.slice(0, 200) + '...';
+          const readMoreLink = document.createElement('a');
+          readMoreLink.href = '#';
+          readMoreLink.textContent = 'Baca Selengkapnya...';
+          readMoreLink.classList.add('read-more');
+          readMoreLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            card.textContent = content;
+            this.remove();
+            const readLessLink = document.createElement('a');
+            readLessLink.href = '#';
+            readLessLink.textContent = 'Baca Lebih Sedikit';
+            readLessLink.classList.add('read-less');
+            readLessLink.addEventListener('click', function (event) {
+              event.preventDefault();
+              card.textContent = content.slice(0, 200) + '...';
+              card.parentNode.appendChild(readMoreLink);
+              this.remove();
+            });
+            card.parentNode.appendChild(readLessLink);
+          });
+          card.parentNode.appendChild(readMoreLink);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

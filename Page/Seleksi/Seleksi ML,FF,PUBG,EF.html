@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleksi LBK ESPORT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../Styles/Seleksi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/smartwizard@6/dist/css/smart_wizard_all.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/smartwizard@6/dist/js/jquery.smartWizard.min.js"
+        type="text/javascript"></script>
+    <!-- CSS -->
+    <link href="https://unpkg.com/smartwizard@6/dist/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/smartwizard@6/dist/js/jquery.smartWizard.min.js" type="text/javascript"></script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KCKV9FLGM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4KCKV9FLGM');
+</script>
+
+<body>
+    <div class="container mt-5">
+        <img src="../../Image/Assest/LBK ESPORT transparent.png" class="Logolbkesport" alt="">
+        <h2 class="Judul">Mobile Legend, Free Fire, Pubg Mobile Dan E-Football <span>LBK ESPORT</span></h2>
+        <hr>
+        <div class="navigation">
+            <ul class="nav-list">
+                <li><a href="Seleksi ML,FF,PUBG,EF.html" class="active">Mobile Legend, Free Fire, Pubg Mobile Dan
+                        E-Football</a></li>
+                <li><a href="Seleksi Management.html">Management</a></li>
+                <li><a href="Seleksi Desain Kratif Esport.html">Design Kreativ Esport</a></li>
+                <li><a href="Seleksi Brand A.html">Brand Ambbasador</a></li>
+            </ul>
+        </div>
+
+        <div class="container1">
+            <h2 class="Judul">Seleksi Mobile Legend, Free Fire, Pubg Mobile Dan E-Football</h2>
+            <div class="row">
+                <div class="col-md">
+                    <div class="container-wizard">
+                        <div id="wizard">
+                            <div class="step active" id="step1">
+                                <h3><i class="fas fa-file-alt"></i>Seleksi Data</h3>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p>Seleksi data ini adalah proses untuk memeriksa data yang telah Anda kirimkan
+                                            melalui formulir, guna memastikan apakah sesuai dengan syarat dan ketentuan
+                                            yang telah ditetapkan. Jika data Anda sesuai, admin akan menghubungi Anda
+                                            untuk tahap seleksi selanjutnya.</p>
+                                        <button onclick="nextStep(1)" class="btn btn-circle btn-primary"><i
+                                                class="fas fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step" id="step2">
+                                <h3><i class="fas fa-microphone"></i>Seleksi Interview</h3>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p>Seleksi interview adalah proses wawancara melalui WhatsApp atau Discord.
+                                            Tahap ini merupakan wawancara dengan calon pemain atau tim LBK ESPORT untuk
+                                            memastikan bahwa owner dapat yakin Anda dapat diterima di LBK ESPORT.</p>
+                                        <button onclick="prevStep(2)" class="btn btn-circle btn-secondary"><i
+                                                class="fas fa-arrow-left"></i></button>
+                                        <button onclick="nextStep(2)" class="btn btn-circle btn-primary"><i
+                                                class="fas fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step" id="step3">
+                                <h3><i class="fas fa-bullhorn"></i> Pengumuman</h3>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p>Inilah akhir dari semuanya di mana pengumuman akan dibuat mengenai siapa yang
+                                            berhak masuk ke LBK ESPORT.</p>
+                                        <button onclick="prevStep(3)" class="btn btn-circle btn-secondary"><i
+                                                class="fas fa-arrow-left"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        let currentStep = 1;
+
+        function nextStep(step) {
+            document.getElementById('step' + currentStep).classList.remove('active');
+            currentStep = step + 1;
+            document.getElementById('step' + currentStep).classList.add('active');
+        }
+
+        function prevStep(step) {
+            document.getElementById('step' + currentStep).classList.remove('active');
+            currentStep = step - 1;
+            document.getElementById('step' + currentStep).classList.add('active');
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../Image/Assest/LBK\ ESPORT\ MOCKUP.jpg");
+    background-size: cover;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.Logolbkesport {
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    height: auto;
+}
+
+.Judul {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 20px;
+    color: #db2625;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+h2 span {
+    color: #d18d0f;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #d18d0f;
+    margin: 20px 0;
+}
+
+hr:hover {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+.navigation {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #bcb7b4;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    font-family: "Big Shoulders Display", sans-serif;
+
+}
+
+.nav-list li a:hover {
+    color: #d18d0f;
+}
+
+.nav-list li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #E71B26 !important;
+    transition: width 0.3s ease, left 0.3s ease;
+    transform-origin: left;
+}
+
+.nav-list li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.container1 {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(209, 141, 15, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.subjudul {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d18d0f;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Big Shoulders Display", sans-serif;
+
+}
+
+.card {
+    background-color: #db2625;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #E1DEDB;
+    margin-bottom: 10px;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card ul li {
+    font-size: 16px;
+    color: #E1DEDB;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+.fa-user,
+.fa-users {
+    margin-right: 10px;
+    color: #E1DEDB;
+}
+
+.pria {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #E1DEDB;
+    margin-bottom: 10px;
+    font-family: "Big Shoulders Display", sans-serif;
+    margin-left: 30px;
+}
+
+.pria i {
+    margin-right: 10px;
+    color: #E1DEDB;
+}
+
+.wanita {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #E1DEDB;
+    margin-bottom: 10px;
+    font-family: "Big Shoulders Display", sans-serif;
+    margin-left: 30px;
+}
+
+.wanita i {
+    margin-right: 10px;
+}
+
+.Submjudul2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #3C3C3C;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 2px dashed #d18d0f;
+    margin-left: 45px;
+}
+
+.personal-requirements,
+.requirements-mobile-legends,
+.other-requirements {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.personal-requirements li,
+.requirements-mobile-legends li,
+.other-requirements li {
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+}
+
+.active {
+    border-bottom: 2px solid #d18d0f;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-style: italic;
+
+
+}
+
+@media (max-width: 768px) {
+    .Judul {
+        font-size: 2rem; /* Ubah ukuran font untuk judul */
+    }
+    
+    .nav-list li {
+        display: block; /* Ubah tata letak daftar navigasi menjadi tumpukan vertikal */
+        margin: 10px 0; /* Tambahkan ruang antara setiap item navigasi */
+    }
+    
+    .nav-list li:last-child {
+        margin-bottom: 0; /* Hilangkan ruang bawah untuk item terakhir */
+    }
+    
+    .card-title {
+        font-size: 16px; /* Ubah ukuran font untuk judul kartu */
+    }
+    
+    .card ul li {
+        font-size: 14px; /* Ubah ukuran font untuk item daftar kartu */
+    }
+    
+    .Submjudul2 {
+        font-size: 14px; /* Ubah ukuran font untuk subjudul */
+    }
+}

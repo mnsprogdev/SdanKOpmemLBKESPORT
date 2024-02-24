@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../Image/Assest/LBK\ ESPORT\ MOCKUP.jpg");
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Logolbkesport {
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 20px;
+    color: #db2625;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+h2 span {
+    color: #d18d0f;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #d18d0f;
+    margin: 20px 0;
+}
+
+hr:hover {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+.card {
+    background-color: #db2625;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: solid #d18d0f;
+    border-top: solid #d18d0f;
+    animation: fadeInRight 1s ease-in-out;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.card:hover {
+    animation: none;
+    transform: scale(1.05);
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.card-img {
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.icon {
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: #bcb7b4;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+.btn-primary {
+    background-color: #383838 !important;
+    border: none;
+    transition: background-color 0.3s ease;
+    color: #bcb7b4;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #383838;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.submenu ul li {
+    margin-bottom: 0.5rem;
+}
+
+.submenu {
+    margin-top: 3px;
+}
+
+.btn-primary a {
+    color: #bcb7b4;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+.btn-primary a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+   
+  
+    .container {
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    hr {
+      margin: 15px 0;
+    }
+  
+    .card {
+      margin-top: 10px;
+    }
+  
+    .card-body {
+      padding: 1rem;
+    }
+  
+    .icon {
+      width: 50px;
+    }
+  
+    .card-title {
+      font-size: 1rem;
+    }
+  
+    .btn-primary {
+      font-size: 0.9rem;
+    }
+  }
+
+  #not-available-msg {
+    color: red;
+    font-weight: bold;
+}
+

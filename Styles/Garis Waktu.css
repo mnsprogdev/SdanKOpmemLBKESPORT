@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../Image/Assest/LBK\ ESPORT\ MOCKUP.jpg");
+    background-size: cover;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.Logolbkesport {
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    height: auto;
+}
+
+.Judul {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 20px;
+    color: #db2625;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+h2 span {
+    color: #d18d0f;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #d18d0f;
+    margin: 20px 0;
+}
+
+hr:hover {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+.navigation {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #bcb7b4;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    font-family: "Big Shoulders Display", sans-serif;
+
+}
+
+.nav-list li a:hover {
+    color: #d18d0f;
+}
+
+.nav-list li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #E71B26 !important;
+    transition: width 0.3s ease, left 0.3s ease;
+    transform-origin: left;
+}
+
+.nav-list li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.container1 {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(209, 141, 15, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.subjudul {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d18d0f;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Big Shoulders Display", sans-serif;
+
+}
+
+.active {
+    border-bottom: 2px solid #d18d0f;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-style: italic;
+
+}
+
+.container2 {
+    background-color: #E71B26;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.timeline {
+    position: relative;
+    margin-top: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.timeline-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.timeline-date {
+    color: #333;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #007bff;
+    border: 2px solid #fff;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    width: 2px;
+    height: calc(100% - -15px);
+    background-color: #bcb7b4;
+}
+
+.timeline-item:last-child::after {
+    display: none;
+}
+
+.timeline-item:nth-child(odd)::before {
+    background-color: #28a745;
+}
+
+.timeline-item:nth-child(odd)::after {
+    background-color: #bcb7b4;
+}
+
+.event-1::before {
+    background-color: #28a745;
+    /* Warna untuk acara pertama */
+}
+
+.event-2::before {
+    background-color: #007bff;
+    /* Warna untuk acara pertama */
+}
+
+.event-3::before {
+    background-color: #ff0000 !important;
+    /* Warna untuk acara pertama */
+}
+
+.event-4::before {
+    background-color: #ffa500 !important;
+    /* Warna untuk acara pertama */
+}
+
+.event-5::before {
+    background-color: #800080 !important;
+    /* Warna untuk acara pertama */
+}
+
+
+#calendar {
+    font-family: 'Arial', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #d18d0f;
+    padding: 20px;
+}
+
+.fc-daygrid-container {
+    border: none;
+}
+
+.fc-daygrid-day-number {
+    color: #333;
+}
+
+.fc-toolbar-title {
+    font-size: 24px;
+    color: #E71B26;
+}
+
+.fc-toolbar {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.fc-button-primary {
+    background-color: #E71B26 !important;
+}
+
+.fc-button-primary:hover {
+    background-color: #E71B26;
+}
+
+.fc-button-primary:focus {
+    background-color: #E71B26;
+}
+
+.fc-button-primary:active {
+    background-color: #E71B26;
+}

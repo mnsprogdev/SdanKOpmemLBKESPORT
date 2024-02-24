@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PENDAFTARAN LBK ESPORT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Styles/index.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KCKV9FLGM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4KCKV9FLGM');
+</script>
+
+<body>
+    <div class="container mt-5">
+        <img src="Image/Assest/LBK ESPORT transparent.png" class="Logolbkesport" alt="">
+        <hr>
+        <h2>Cek Syarat Dan Ketentuan Perekrutan LBK ESPORT</h2>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="Image/Assest/Auuuuu.png" class="card-img" alt="Gambar 1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <img src="Image/Assest/Syarat Dan Ketentuan.png" alt="Icon" class="icon">
+                                <h5 class="card-title">Syarat Dan Ketentuan</h5>
+                                <button class="btn btn-primary"><i class="fas fa-user"></i> <a href="Page/Pages S & K/S & K Divisi ML.html">Cek Di Sini</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="Image/Assest/Auuuuu.png" class="card-img" alt="Gambar 1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <img src="Image/Assest/Benefit.png" alt="Icon" class="icon">
+                                <h5 class="card-title">Keuntungan</h5>
+                                <button class="btn btn-primary"><i class="fas fa-user"></i> <a href="Page/Pages Keuntungan/Keutungan Div.html">Cek Di Sini</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="Image/Assest/Auuuuu.png" class="card-img" alt="Gambar 1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <img src="Image/Assest/Timeline.png" alt="Icon" class="icon">
+                                <h5 class="card-title">Garis Waktu</h5>
+                                <button class="btn btn-primary"><i class="fas fa-user"></i> <a href="Page/Garis Waktu/GW ML,FF,PUBG,EF.html">Cek Di Sini</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="Image/Assest/Auuuuu.png" class="card-img" alt="Gambar 1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <img src="Image/Assest/Seleksi.png" alt="Icon" class="icon">
+                                <h5 class="card-title">Proses Seleksi</h5>
+                                <button class="btn btn-primary"><i class="fas fa-user"></i> <a href="Page/Seleksi/Seleksi ML,FF,PUBG,EF.html">Cek Di Sini</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sisipkan card lainnya sesuai kebutuhan -->
+        </div>
+    </div>
+    
+    <script>
+        function toggleSubMenu(event) {
+            var parentCard = event.target.closest('.card-body');
+            var submenu = parentCard.querySelector('.submenu');
+            if (submenu.style.display === 'none' || submenu.style.display === '') {
+                submenu.style.display = 'block';
+            } else {
+                submenu.style.display = 'none';
+            }
+        }
+        function toggleSubMenu(event, cardType) {
+            event.preventDefault();
+            if (cardType === 'Pubg Mobile' || cardType === 'E Football' || cardType === 'Desain Kreatif Esport' || cardType === 'Brand Ambassador') {
+                showNotAvailableMessage();
+            } else {
+                // Do something else if other cards are clicked
+            }
+        }
+        function showNotAvailableMessage() {
+            alert("Tidak Tersedia");
+        }
+    </script>
+</body>
+
+</html>
